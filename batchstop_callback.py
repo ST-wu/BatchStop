@@ -11,7 +11,7 @@ class AdaptiveBatchStopper(tf.keras.callbacks.Callback):
         self.min_batches = min_batches
         self.adapt_rate = adapt_rate
         
-        # 狀態變數初始化
+        # initial
         self.history = []
         self.base_value = None
         self.decline_count = 0
